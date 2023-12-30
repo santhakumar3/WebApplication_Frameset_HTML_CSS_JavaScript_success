@@ -1,0 +1,189 @@
+<DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Welcome</title>
+        <style>
+            .mainbody {
+                background-color: white;
+                width: 100%;
+                height: 100%;
+            }
+
+            .mainindex {
+                background-color: pink;
+                height: 20vh;
+                border: 2px solid gray;
+                text-align: center;
+            }
+
+
+            .sub-mainindex {
+                display: flex;
+                flex-direction: column;
+                background-color: pink;
+                width: 30vh;
+                border-left: 2px solid gray;
+                border-right: 2px solid gray;
+                border-bottom: 2px solid gray;
+            }
+
+            .main-body {
+                display: flex;
+                flex-direction: row;
+            }
+
+            .box {
+                background-color: pink;
+                padding: 10;
+                border-bottom: 1px solid gray;
+                text-align: center;
+            }
+
+            .bodydiv {
+                padding: 10;
+            }
+
+            .login-form {
+                width: 700;
+                height: 500;
+                background-color: pink;
+                align-content: center;
+                justify-content: center;
+            }
+
+            .inputfield {
+                width: 50vh;
+                margin: 10;
+                padding: 10;
+            }
+
+            .button {
+                margin-left: 10;
+                padding: 10;
+            }
+        </style>
+        <script>
+            function clickMe(home) {
+                if (home == 'Home') {
+                    var targetPageUrl = 'index.html';
+                    // Change the background color of the h1 tag
+                    document.getElementById('home1').style.backgroundColor = 'blue';
+
+                    // Navigate to the target page
+                    window.location.href = targetPageUrl;
+                } else if (home == 'Login') {
+                    var targetPageUrl = 'login.html';
+                    // Change the background color of the h1 tag
+                    document.getElementById('login1').style.backgroundColor = 'blue';
+
+                    // Navigate to the target page
+                    window.location.href = targetPageUrl;
+                } else if (home == 'Register') {
+                    var targetPageUrl = 'register.html';
+
+                    // Change the background color of the h1 tag
+                    document.getElementById('register1').style.backgroundColor = 'blue';
+
+                    // Navigate to the target page
+                    window.location.href = targetPageUrl;
+                } else if (home == 'Gallery') {
+                    var targetPageUrl = 'gallery.html';
+
+                    // Change the background color of the h1 tag
+                    document.getElementById('gallery1').style.backgroundColor = 'blue';
+
+                    // Navigate to the target page
+                    window.location.href = targetPageUrl;
+                } else if (home == 'Department') {
+                    var targetPageUrl = 'department.html';
+                    // Change the background color of the h1 tag
+                    document.getElementById('department1').style.backgroundColor = 'blue';
+
+                    // Navigate to the target page
+                    window.location.href = targetPageUrl;
+                } else if (home == 'Branches') {
+                    var targetPageUrl = 'branches.html';
+
+                    // Change the background color of the h1 tag
+                    document.getElementById('branches1').style.backgroundColor = 'blue';
+
+                    // Navigate to the target page
+                    window.location.href = targetPageUrl;
+                } else if (home == 'Contact') {
+                    var targetPageUrl = 'contact.html';
+
+                    // Change the background color of the h1 tag
+                    document.getElementById('contact1').style.backgroundColor = 'blue';
+
+                    // Navigate to the target page
+                    window.location.href = targetPageUrl;
+                } else if (home == 'About') {
+                    var targetPageUrl = 'about.html';
+
+                    // Change the background color of the h1 tag
+                    document.getElementById('about1').style.backgroundColor = 'blue';
+
+                    // Navigate to the target page
+                    window.location.href = targetPageUrl;
+                }
+            }
+
+            function register() {
+                alert('Register Successfully')
+            }
+
+            function cancel() {
+                alert('Data Cleared..')
+            }
+        </script>
+    </head>
+
+    <body class="mainbody">
+
+        <div class="mainindex">
+            <h1>Student Register Panel</h1>
+            <h3 style="color: blue;">Admin panel for student maintanance system</h3>
+
+        </div>
+
+
+        <div class="main-body">
+            <div class="sub-mainindex">
+                <h3 id="home1" class="box" onclick="clickMe('Home')">Home</h3>
+                <h3 id="login1" class="box" onclick="clickMe('Login')">Login</h3>
+                <h3 id="register1" class="box" onclick="clickMe('Register')">Register</h3>
+                <h3 id="department1" class="box" onclick="clickMe('Department')">Department</h3>
+                <h3 id="branches1" class="box" onclick="clickMe('Branches')">Branches</h3>
+                <h3 id="gallery1" id="gallery1" class="box" onclick="clickMe('Gallery')">Gallery</h3>
+                <h3 id="contact1" class="box" onclick="clickMe('Contact')">Contact</h3>
+                <h3 id="about1" class="box" onclick="clickMe('About')">About</h3>
+
+
+            </div>
+            <div class="bodydiv">
+                <div class="login-form">
+
+                    <h1 style="margin: 10; text-align: center;">Login</h1>
+
+                    <input type="text" placeholder="Username" class="inputfield">
+
+                    <input type="password" placeholder="Password" class="inputfield">
+
+                    <div>
+                        <input type="button" value="Login" class="button" onclick="register()">
+                        <input type="button" value="Cancel" class="button" onclick="cancel()">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </body>
+
+    </html>
